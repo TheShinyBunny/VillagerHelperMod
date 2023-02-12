@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "villagerhelper",
+  "version": "${version}",
+  "name": "VillagerHelper",
+  "description": "Helper for villagers",
+  "authors": [
+    "TheShinyBunny"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/villagerhelper/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.shinybunny.villagerhelper.client.VillagerHelperClient"
+    ],
+    "main": [
+      "com.shinybunny.villagerhelper.VillagerHelper"
+    ]
+  },
+  "mixins": [
+    "villagerhelper.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.12",
+    "fabric": "*",
+    "minecraft": "1.19.3"
+  }
+}
